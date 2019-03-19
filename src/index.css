@@ -1,0 +1,16 @@
+.Selectable {
+  position: relative;
+}
+
+.Selectable__selection-box {
+  display: none;
+  position: absolute;
+  pointer-events: none;
+  transition: opacity .4s;
+  background-color: rgba(204 ,204, 204, .2);
+  border: 1px solid #ccc;
+}
+
+.Selectable__item--selected {
+  background-color: rgba(59, 131, 238, 0.6);
+}
