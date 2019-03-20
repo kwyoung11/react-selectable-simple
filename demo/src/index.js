@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Selectable from '../../src'
-import '../../src/index.css';
+import '../../src/react-selectable-simple.css';
 import './demo.css';
 
 class MyComponent extends React.Component {

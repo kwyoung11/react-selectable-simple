@@ -41,7 +41,6 @@ class Selectable extends React.Component {
 				isSelectModeOn: this.props.isSelectModeOn
 			}, () => {
 				this.initSelectionMode();
-				console.log("selectMode is now: ", this.state.isSelectModeOn ? "On" : "Off");
 			});
 		}
 	}
@@ -73,7 +72,6 @@ class Selectable extends React.Component {
 		}
 
 		if (endSelection) {
-			console.log("calling onSelectionEnd with: ", selected);
 			this.state.onSelectionEnd(selected);
 			this.setState({
 				isSelectModeRunning: false,
@@ -98,7 +96,6 @@ class Selectable extends React.Component {
 		this.setState({
 			selectables: selectableElements
 		}, () => {
-			// console.log("initSelectionMode", this.state.isSelectModeOn);
 			if (this.state.isSelectModeOn) {
 				this.selectableArea.current.style.cursor = "crosshair";
 			} else {
