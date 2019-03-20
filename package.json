@@ -1,7 +1,7 @@
 {
-  "name": "react-selectable",
+  "name": "react-selectable-simple",
   "version": "1.0.0",
-  "description": "react-selectable React component",
+  "description": "Provides a toggleable rectangular selection tool to visually select target elements",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -29,11 +29,13 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Kevin Young",
+  "homepage": "github.com/kwyoung11/react-selectable-simple",
   "license": "MIT",
-  "repository": "",
+  "repository": "github.com/kwyoung11/react-selectable-simple",
   "keywords": [
-    "react-component"
+    "react-component",
+    "selection",
+    "rectangular-selection-tool"
   ]
 }
