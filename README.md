@@ -2,6 +2,8 @@
 
 [![npm package][npm-badge]][npm]
 
+![Selection Tool](https://user-images.githubusercontent.com/1297966/54699629-6568e580-4aff-11e9-8d50-b50fc8063957.png)
+
 ## A React Component That Provides Toggleable Rectangular Selection
 `react-selectable-simple` gives you a rectangular selection tool so that you can visually select target elements.
 
