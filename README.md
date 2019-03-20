@@ -1,14 +1,26 @@
 # react-selectable
 
-[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+
+![Selection Tool](https://user-images.githubusercontent.com/1297966/54699629-6568e580-4aff-11e9-8d50-b50fc8063957.png)
 
 ## A React Component That Provides Toggleable Rectangular Selection
 `react-selectable-simple` gives you a rectangular selection tool so that you can visually select target elements.
 
+
+JSFiddle Demo: https://jsfiddle.net/hdr7nj62/22/
+
 ### Installation
-```npm install react-selectable-simple --save```
+Via npm:
+```
+npm install react-selectable-simple --save
+```
+
+Via html script tag:
+```
+<script src="https://unpkg.com/react-selectable-simple/umd/react-selectable-simple.js"></script>
+```
+You'll need to use the ReactSelectableSimple browser global variable if including via a <script> tag.
 
 ### Basic Usage
 ```
@@ -72,6 +84,20 @@ class MyComponent extends React.Component {
 }
 ```
 
+### Styles
+```
+import 'react-selectable-simple/lib/react-selectable-simple.css';
+```
+This provides some basic default styling. In short, it adds `position: relative` to the outer container, then some basic styling to the selection box itself, and a background color to the --selected state modifier on selectable items.
+
+The default class names are listed below. The naming convention follows BEM methodology:
+`.Selectable`: the container element that wraps the selection box and the selectable items
+`.Selectable__item`: a selectable item
+`.Selectable__selection-box`: the selection box
+`.Selectable__item--selected`: state modifier to denote if an item has been selected
+
+Take a look here: https://github.com/kwyoung11/react-selectable-simple/blob/master/src/react-selectable-simple.css
+
 ### Available Props
 `isSelectModeOn`: toggles the rectangular selection tool on and off
 
@@ -85,11 +111,5 @@ class MyComponent extends React.Component {
 
 `selectedClassName`: the class added to selected elements. defaults is "Selectable__item--selected", or specify a different className by passing it as a prop
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
-
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+[npm-badge]: https://img.shields.io/npm/v/react-selectable-simple.png?style=flat-square
+[npm]: https://www.npmjs.org/package/react-selectable-simple
