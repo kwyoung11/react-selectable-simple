@@ -1,6 +1,5 @@
 # react-selectable
 
-[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 
 ## A React Component That Provides Toggleable Rectangular Selection
