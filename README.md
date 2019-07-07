@@ -8,7 +8,7 @@
 `react-selectable-simple` gives you a rectangular selection tool so that you can visually select target elements.
 
 
-JSFiddle Demo: https://jsfiddle.net/hdr7nj62/22/
+JSFiddle Demo: https://jsfiddle.net/xkwp4z8y/
 
 ### Installation
 Via npm:
